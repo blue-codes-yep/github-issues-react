@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Issue from './Issue'
 
+
 class IssueList extends Component {
     constructor(props) {
         super(props);
@@ -35,6 +36,7 @@ class IssueList extends Component {
                             <li>No Data</li>
                         )
                     }
+
                 </ul>
             </div>
         )
