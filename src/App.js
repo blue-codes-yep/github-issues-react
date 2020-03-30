@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import IssueList from './components/IssueList'
+import CardColumns from 'react-bootstrap/CardColumns';
 
 
 function App() {
@@ -9,7 +9,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <IssueList />
+        <CardColumns>
+          <IssueList />
+        </CardColumns>
       </header>
     </div>
   );
