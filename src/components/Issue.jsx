@@ -1,5 +1,5 @@
 import React from 'react';
-import IssueList from './IssueList'
+
 
 const Issue = (props) => {
 
@@ -7,6 +7,7 @@ const Issue = (props) => {
     return (
         <li>
             <h3><a href={props.issue.html_url}>{props.issue.title}</a></h3>
+            <p>{props.issue.body}</p>
 
         </li>
 
