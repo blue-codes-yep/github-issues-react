@@ -1,10 +1,21 @@
-.App {
-  text-align: center;
+ul {
+  padding-left: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: white;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+p {
+  font-size: 15px;
+}
+
+.App {
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
