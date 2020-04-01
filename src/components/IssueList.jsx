@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import Issue from './Issue'
+import { Link } from 'react-router-dom';
+import Issue from './IssueDetail'
 
 
 class IssueList extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            issues: [],
-        };
+    state = {
+        issues: []
     }
 
     componentDidMount() {
@@ -27,19 +25,23 @@ class IssueList extends Component {
         return (
             <div>
                 <ul>
-
                     {issues.length > 0 ? (
                         issues.map(issue => (
+
                             <Issue issue={issue} key={issue.id} />
                         ))
+
                     ) : (
                             <li>No Data</li>
                         )
-                    }
 
+                    }
+                    <Link Link to={`/issue/${issues.number}`}>View Issue</Link>
                 </ul>
             </div>
+
         )
+
     }
 }
 

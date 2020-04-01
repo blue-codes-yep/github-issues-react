@@ -7,7 +7,7 @@
   list-style: none;
   background-color: #6c757d;
   margin: auto;
-  max-width: 55vw;
+  /* max-width: 55vw; */
 }
 
 /* .card {
@@ -31,5 +31,5 @@
 
 .row {
   overflow: hidden;
-  max-width: 100vw;
+  /* max-width: 100vw; */
 }
